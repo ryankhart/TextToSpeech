@@ -980,12 +980,12 @@ end
 
 -- ScrollFrame - scroll-up or scroll-down.
 function JocysCom_DialogueScrollFrame_OnMouseWheel(self, delta)
-	if delta == 1 then
-		JocysCom_PlayButton_OnClick()
+	-- if delta == 1 then
+	-- 	JocysCom_PlayButton_OnClick()
 
-	else
-		JocysCom_StopButton_OnClick("Quest")
-	end
+	-- else
+	-- 	JocysCom_StopButton_OnClick("Quest")
+	-- end
 end
 
 function JocysCom_PlayOpenedFrame()
@@ -1051,10 +1051,10 @@ function JocysCom_AttachAndShowFrames()
 	end
 	-- ScrollFrame
 	JocysCom_DialogueScrollFrame:ClearAllPoints()
-	JocysCom_DialogueScrollFrame:SetParent(frameScroll)
-	JocysCom_DialogueScrollFrame:SetPoint("TOPLEFT", frameScroll, 4, -4)
-	JocysCom_DialogueScrollFrame:SetPoint("BOTTOMRIGHT", frameScroll, -4, 4)
-	JocysCom_DialogueScrollFrame:SetFrameLevel(100)
+	-- JocysCom_DialogueScrollFrame:SetParent(frameScroll)
+	-- JocysCom_DialogueScrollFrame:SetPoint("TOPLEFT", frameScroll, 4, -4)
+	-- JocysCom_DialogueScrollFrame:SetPoint("TOPLEFT", frameScroll, -4, 4)
+	-- JocysCom_DialogueScrollFrame:SetFrameLevel(100)
 	-- ButtonFrame
 	JocysCom_DialogueMiniFrame:ClearAllPoints()
 	JocysCom_DialogueMiniFrame:SetParent(frameButton)
